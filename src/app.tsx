@@ -3,7 +3,7 @@ import { useEffect, useState } from "preact/hooks";
 export function App() {
   const [value, setValue] = useState<null | string>(null);
   const [bookmarkName, setBookmarkName] = useState<null | string>("Link");
-  const SITE_URL = "http://" + window.location.host;
+  const SITE_URL = "http://" + window.location.host + "/copy-bookmark/";
 
   function capitalize(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1);
